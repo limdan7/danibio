@@ -1,3 +1,10 @@
 <div class="container">
-    <h1><%= @answer %></h1>
+    <form action="/blastp/result" method="post" target="_blank">
+      <div class="form-group">
+        <label for="exampleTextarea">Copy and Paste Blastp results</label>
+        <textarea class="form-control" name="sequence" id="exampleTextarea" rows="13"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
 </div>

@@ -1,6 +1,12 @@
 class BlastpController < ApplicationController
-    
+    include  BlastpHelper
     def compare
-        @answer = "해석 된 본!"
+        
     end
+    
+    def result
+        seq = params[:sequence]
+        @answer = sequencing(seq).html_safe
+    end
+       
 end
