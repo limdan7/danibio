@@ -1,5 +1,6 @@
 class BlastpController < ApplicationController
     include  BlastpHelper
+    
     def compare
         
     end

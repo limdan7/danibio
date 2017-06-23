@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  
+  get '/analysis/new' => 'analysis#new'
+  post '/analysis/create' => 'analysis#create'
+  
   root :to => 'blastp#compare'
   post 'blastp/result' => 'blastp#result'
   # Example of regular route:
